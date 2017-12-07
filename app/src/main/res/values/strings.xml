@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SQLiteDemo</string>
+    <string name="insertData">insert into Book (name,author,pages,price) values (?,?,?,?)</string>
 </resources>
