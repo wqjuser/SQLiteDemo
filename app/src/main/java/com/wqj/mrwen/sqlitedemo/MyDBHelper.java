@@ -10,13 +10,13 @@ import android.widget.Toast;
  */
 
 public class MyDBHelper extends SQLiteOpenHelper {
-    private Context context;
     private static final String CREATE_BOOK = "create table Book("
-            + "ID integer primary key autoincrement"
-            + "author text"
-            + "price real"
-            + "pages integer"
+            + "ID integer primary key autoincrement,"
+            + "author text,"
+            + "price real,"
+            + "pages integer,"
             + "name text)";
+    private Context context;
 
 
     public MyDBHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
