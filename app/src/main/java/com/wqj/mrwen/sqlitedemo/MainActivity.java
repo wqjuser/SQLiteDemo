@@ -14,21 +14,16 @@ import butterknife.ButterKnife;
 public class MainActivity extends AppCompatActivity {
 
     private MyDBHelper myDBHelper;
-    private Button btnCreateDB;
-    private Button btnInsertData;
-    private Button btnUpdateData;
-    private Button btnDeleteData;
-    private Button btnQueryData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btnCreateDB = findViewById(R.id.btn_createDatabase);
-        btnInsertData = findViewById(R.id.btn_insert_data);
-        btnUpdateData = findViewById(R.id.btn_update_data);
-        btnDeleteData = findViewById(R.id.btn_delete_data);
-        btnQueryData = findViewById(R.id.btn_query_data);
+        Button btnCreateDB = findViewById(R.id.btn_createDatabase);
+        Button btnInsertData = findViewById(R.id.btn_insert_data);
+        Button btnUpdateData = findViewById(R.id.btn_update_data);
+        Button btnDeleteData = findViewById(R.id.btn_delete_data);
+        Button btnQueryData = findViewById(R.id.btn_query_data);
         myDBHelper = new MyDBHelper(this, "book.db", null, 5);
         ButterKnife.bind(this);
         btnCreateDB.setOnClickListener(new View.OnClickListener() {

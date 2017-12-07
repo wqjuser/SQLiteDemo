@@ -23,7 +23,7 @@ public class MyDBHelper extends SQLiteOpenHelper {
     private Context context;
 
 
-    public MyDBHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
+    MyDBHelper(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
         super(context, name, factory, version);
         this.context = context;
     }
